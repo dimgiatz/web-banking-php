@@ -1,0 +1,14 @@
+
+# HTID:3832222: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:3832222:
+php_flag output_buffering on
+
+php_value session.cookie_httponly 1
+php_value session.cookie_secure 1
+php_value session.use_only_cookies 1
+php_value session.cookie_domain "localhost"
+
+Header set X-Frame-Options SAMEORIGIN
+Header set X-XSS-Protection "1; mode=block
+Header set X-Content-Type-Options nosniff
